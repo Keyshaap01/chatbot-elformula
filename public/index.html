@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ELFORMULA – Paket Skincare dari Lapak elformula.id</title>
+  <meta name="description" content="Katalog paket skincare ELFORMULA dari lapak Shopee elformula.id, lengkap dengan chatbot yang menjawab dari data produk.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="ELFORMULA">ELFORMULA</a>
+    <a class="btn btn-ghost" id="shopLink" href="https://shopee.co.id/elformula.id" target="_blank" rel="noopener">Buka lapak di Shopee</a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <h1>Semua produk lapak elformula.id, bisa ditanya langsung.</h1>
+      <p class="lead">Telusuri skincare ELFORMULA menurut jenisnya, atau tanya chatbot paket mana yang pas dengan budget kamu. Data produk diambil dari lapak Shopee resmi.</p>
+      <div id="types" class="types" role="group" aria-label="Filter jenis produk"></div>
+    </section>
+
+    <section class="catalog" aria-labelledby="catTitle">
+      <div class="toolbar">
+        <h2 id="catTitle">Katalog <span id="count" class="count"></span></h2>
+        <div class="controls">
+          <label class="field"><span class="sr">Cari produk</span>
+            <input id="search" type="search" placeholder="Cari, mis. serum atau 3in1" autocomplete="off">
+          </label>
+          <label class="field"><span class="sr">Urutkan</span>
+            <select id="sort">
+              <option value="terlaris">Terlaris</option>
+              <option value="murah">Harga terendah</option>
+              <option value="mahal">Harga tertinggi</option>
+              <option value="diskon">Diskon terbesar</option>
+            </select>
+          </label>
+        </div>
+      </div>
+      <div id="grid" class="grid" aria-live="polite"><p class="empty">Memuat produk…</p></div>
+      <p class="note">Harga, diskon, dan jumlah terjual mengikuti tampilan lapak Shopee saat data diambil dan dapat berubah. Beberapa deskripsi merupakan ringkasan dari judul produk di Shopee. Cek detail dan harga terbaru di Shopee sebelum memesan.</p>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span>ELFORMULA (elformula.id)</span>
+    <a id="shopLink2" href="https://shopee.co.id/elformula.id" target="_blank" rel="noopener">shopee.co.id/elformula.id</a>
+  </footer>
+
+  <!-- Chatbot -->
+  <button id="chatFab" class="chat-fab" aria-expanded="false" aria-controls="chatPanel">Tanya chatbot</button>
+  <section id="chatPanel" class="chat" hidden aria-label="Chatbot ELFORMULA">
+    <div class="chat-head">
+      <div><strong>Chatbot ELFORMULA</strong><small>Menjawab dari data produk lapak</small></div>
+      <button id="chatClose" class="icon-btn" aria-label="Tutup chat">×</button>
+    </div>
+    <div id="chatLog" class="chat-log" role="log" aria-live="polite"></div>
+    <div id="chatChips" class="chips"></div>
+    <div class="chat-form">
+      <input id="chatInput" type="text" maxlength="500" placeholder="Tulis pertanyaan…" autocomplete="off" aria-label="Pertanyaan">
+      <button id="chatSend" class="btn btn-solid">Kirim</button>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

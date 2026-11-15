@@ -1,0 +1,8 @@
+node_modules/
+.env
+.vercel/
+.wwebjs_auth/
+.wwebjs_cache/
+wa-gateway/node_modules/
+wa-gateway/.wwebjs_auth/
+wa-gateway/.wwebjs_cache/

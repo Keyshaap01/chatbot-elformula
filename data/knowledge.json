@@ -1,0 +1,19 @@
+{
+  "keywords": {
+    "cara pesan": "cara pesan",
+    "cara order": "cara pesan",
+    "cara beli": "cara pesan",
+    "cara checkout": "cara pesan",
+    "link shopee": "link toko",
+    "link toko": "link toko",
+    "link lapak": "link toko",
+    "kontak": "kontak",
+    "hubungi": "kontak",
+    "nomor wa": "kontak"
+  },
+  "responses": {
+    "cara pesan": "Cara memesan:\n1. Pilih produk atau paket yang diinginkan.\n2. Klik link lapak kami di Shopee: {{SHOPEE_URL}}\n3. Pilih produknya, lalu checkout di Shopee.\n\nAda pertanyaan soal produk? Tanyakan di chat ini ya.",
+    "link toko": "Lapak resmi *{{STORE_NAME}}* ada di Shopee: {{SHOPEE_URL}}",
+    "kontak": "Kontak *{{STORE_NAME}}*:\n*Shopee:* {{SHOPEE_URL}}\n*WhatsApp:* {{WA_LINK}}"
+  }
+}
